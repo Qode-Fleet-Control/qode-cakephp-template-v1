@@ -1,0 +1,12 @@
+.git
+.github
+.fleet
+.fleet-deploy.log
+vendor
+node_modules
+config/app_local.php
+config/.env
+logs/*
+tmp/*
+.phpunit.cache
+*.log
