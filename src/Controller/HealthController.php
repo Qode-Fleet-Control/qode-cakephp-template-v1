@@ -10,6 +10,11 @@ use Cake\Http\Response;
  */
 class HealthController extends AppController
 {
+    /**
+     * Answers 200 with {"status": "ok"} while the app is up.
+     *
+     * @return \Cake\Http\Response
+     */
     public function index(): Response
     {
         return $this->response
