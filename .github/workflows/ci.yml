@@ -63,7 +63,8 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2'
+        # The PHP the image runs (Dockerfile: frankenphp php8.4); composer.lock's phpunit needs >= 8.4.
+        php-version: '8.4'
         extensions: mbstring, intl
         coverage: none
         tools: cs2pr, phpstan:2.1
